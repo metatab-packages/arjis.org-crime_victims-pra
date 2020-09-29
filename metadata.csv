@@ -1,43 +1,46 @@
-Declare,metatab-latest,,,
-Title,San Diego Crime Incidents with Victim Descriptions,,,
-Description,"Crime Victims in San Diego, from 2016 though July 2020, with UCR codes for the",,,
-Description,"crime and the age, race and sex of the victim.",,,
-Identifier,5d010e29-5085-4933-b523-cf113cc85a42,,,
-Name,arjis.org-crime_victims-pra-1.1.1,,,
-Dataset,crime_victims,,,
-Origin,arjis.org,,,
-Time,,,,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/allyears_nonsusp.csv
-Space,,,,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/allyears.csv
-Grain,,,,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/uniquecase.csv
-Variant,pra,,,
-Version,1.1.1,,,
-Version.Major,1,,,
-Version.Minor,1,,,
-Version.Patch,1,,,
-Created,2020-09-27T17:20:14,,,
-Modified,2020-09-29T16:22:23,,,
-Giturl,https://github.com/metatab-packages/policedata-collection.git,,,
-,,,,
+Declare,metatab-latest
+Title,San Diego Crime Incidents with Victim Descriptions
+Description,"Crime Victims in San Diego, from 2016 though July 2020, with UCR codes for the"
+Description,"crime and the age, race and sex of the victim."
+Identifier,5d010e29-5085-4933-b523-cf113cc85a42
+Name,arjis.org-crime_victims-pra-1.1.1
+Dataset,crime_victims
+Origin,arjis.org
+Time,
+,
+Space,
+,
+Grain,
+,
+Variant,pra
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2020-09-27T17:20:14
+Modified,2020-09-29T18:21:48
+Giturl,https://github.com/metatab-packages/arjis.org-crime_victims-pra.git
+
 Section,Contacts,Email,Organization,Url
 Analyst,Julie Wartell,,University of San Diego,
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
 Origin,,,ARJIS,http://www.arjis.org
-,,,,
+
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
 Documentation,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/PRA%20Request%20-%20Crime%20Victims%20San%20Diego%20County.pdf,PRA Request,PRA request issued for the data.,
 Documentation,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20Data%20Dictionary%20for%20Omar%20Passons%20Request%209.4.20.docx,Data Dictionary,"Original data dictionary provided with the response, describing the original, unmodified dataset.",
-,,,,
+
 Section,References,Name,Description,
 Reference,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20SDCounty_CrimeData_Jan16_Jul20.xlsx,Processed Source Dataset,"Source dataset, as received by SDRDL, and processed by Julie Wartell. This is the dataset used to generate this data package",
 Reference,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/Omar%20Passons%20-%20second_DataExtract_Omar_Passons.xlsx,Original Source Dataset,"Original, unprocessed dataset, ARJIS' response to the PRA. This dataset is an Excel file with one tab per year.",
-,,,,
+
 Section,Resources,Name,Description,Schema
 Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/allyears.csv,sdcrime_16_20_allyears,"San Diego crime suspects and victims, 2016 though July  2020,all records",
 Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/allyears_nonsusp.csv,sdcrime_16_20_nosusp,"San Diego crime victims, 2016 though July 2020, no suspects",
 Datafile,http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/OPCrimeVictims/uniquecase.csv,sdcrime_16_20_uniquecase,"San Diego crime victims, 2016 though July 2020, unique case numbers",
 Datafile,data/CodeUCRLookup.csv,ucrcodes,UCR codes and detailed descriptions,
-,,,,
+
 Section,Schema,DataType,Altname,Description
 Table,ucrcodes,,,
 Table.Column,index,integer,,
@@ -102,23 +105,4 @@ Table.Column,zipCode,integer,zipcode,ZipCode – The zip code where the incident
 Table.Column,censusBlock,string,censusblock,Census Block/Tract – the census block/tract where the incident/crime case occurred
 Table.Column,censusTract,string,censustract,Census Block/Tract – the census block/tract where the incident/crime case occurred
 Table.Column,City,string,city,City – The city where the incident/crime case occurred
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
 Table.Column,,string,city,
